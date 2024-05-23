@@ -1,0 +1,194 @@
+:root {
+  --color--gris: #efebebfa;
+  --color--fondo: #ffffff;
+
+  /* BORDER-COLORS */
+  --rtc-primary-border: 1px solid var(--color--gris);
+  /* BORDER radio */
+  --rtc-br: 8px;
+
+  /* Espacios */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-section: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  color: black;
+  font-size: medium;
+  text-align: center;
+}
+p {
+  color: black;
+  font-size: x-large;
+}
+
+/*-----------------BARRA NAVEGACIÓN-------*/
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: var(--rtc-margin-s);
+}
+#nav > .inicio {
+  position: relative;
+  right: 2%;
+}
+#nav > .hoy {
+  position: relative;
+  right: 4%;
+}
+#nav > .crear {
+  position: relative;
+  right: 6%;
+}
+#nav > .campana {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 5px;
+}
+#nav > .comentario {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 8px;
+}
+#nav > .usuario {
+  width: 25px;
+  height: 25px;
+}
+
+/*-------MAIN--------------*/
+#gallery {
+  width: 100%;
+  margin: var(--rtc-margin-s);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: var(--rtc-gap-s);
+  flex-wrap: wrap;
+}
+#gallery > a > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sugerencia > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#sugerencia > button {
+  margin-top: var(--rtc-margin-s);
+  position: relative;
+  left: 40%;
+}
+/*--------TABLET-----*/
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  #nav > .logo {
+    width: 60px;
+    height: 30px;
+  }
+  #nav > .inicio {
+    position: relative;
+    right: 6px;
+  }
+  #nav > .crear {
+    position: relative;
+    right: 12px;
+  }
+  #nav > .hoy {
+    position: relative;
+    right: 8px;
+  }
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+  }
+  #sugerencia > button {
+    margin-top: var(--rtc-margin-s);
+    position: relative;
+    left: 30%;
+  }
+}
+
+/*-------MOVIL-----*/
+@media screen and (max-width: 500px) {
+  #nav > .logo {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    left: 12px;
+  }
+  #nav > .crear {
+    position: relative;
+    left: 3px;
+  }
+  #nav > .hoy {
+    position: relative;
+    left: 5px;
+  }
+  #nav > .inicio {
+    position: relative;
+    left: 5px;
+  }
+  #nav > .campana {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 20px;
+  }
+  #nav > .comentario {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 5px;
+  }
+  #nav > .usuario {
+    width: 15px;
+    height: 15px;
+  }
+  #sugerencia > button {
+    position: relative;
+    left: 20%;
+  }
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+  }
+}

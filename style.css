@@ -59,17 +59,14 @@ p {
   align-items: center;
   margin-top: var(--rtc-margin-s);
 }
-#nav > .inicio {
-  position: relative;
-  right: 2%;
-}
+
 #nav > .hoy {
   position: relative;
-  right: 4%;
+  right: 4px;
 }
 #nav > .crear {
   position: relative;
-  right: 6%;
+  right: 6px;
 }
 #nav > .campana {
   width: 25px;

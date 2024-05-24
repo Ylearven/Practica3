@@ -2,7 +2,8 @@
 import {
   btnSugerencia,
   btnTexto,
-  btnImg
+  btnImg,
+  boton
 } from './src/Componentes/Boton/boton.js'
 import { formulario } from './src/Componentes/form/form.js'
 
@@ -64,6 +65,7 @@ function mostrarImagenes(data) {
 busqueda.addEventListener('submit', (e) => {
   e.preventDefault()
   pagina = 1
+  galeria.innerHTML = ''
   buscarImagenes()
 })
 
@@ -85,6 +87,7 @@ ${btnSugerencia('comida')}`
       e.preventDefault()
       const termino = btn.dataset.termino
       buscador.value = termino
+      galeria.innerHTML = ''
       buscarImagenes()
     })
   })

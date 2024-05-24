@@ -1,7 +1,7 @@
 import './boton.css'
 
-export const boton = (texto, clase) => {
-  return `<button id="boton" class="${clase}" type="submit"> ${texto} </button>`
+export const boton = (texto, tipo, clase) => {
+  return `<button id="boton" class="${clase}" type="${tipo}"> ${texto} </button>`
 }
 
 export const btnTexto = (texto, clase) => {

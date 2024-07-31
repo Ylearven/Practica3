@@ -135,6 +135,14 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  #gallery > a {
+    display: flex;
+    justify-content: center;
+  }
+  #gallery > a > img {
+    max-width: 100%;
   }
   #sugerencia > button {
     margin-top: var(--rtc-margin-s);
@@ -187,5 +195,19 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
+    grid-gap: var(--rtc-gap-xs);
+    width: 90%;
+    justify-content: center;
+  }
+  #gallery > a {
+    margin: auto;
+  }
+  #sugerencia > p {
+    font-size: 20px;
+    align-items: center;
+    padding: 5px;
+  }
+  #sugerencia > .btnsugerencia {
+    width: 60px;
   }
 }

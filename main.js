@@ -89,6 +89,7 @@ ${btnSugerencia('comida')}`
       buscador.value = termino
       galeria.innerHTML = ''
       buscarImagenes()
+      sugerencia.innerHTML = ''
     })
   })
 }
